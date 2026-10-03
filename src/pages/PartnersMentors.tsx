@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { CheckCircle2, Handshake, Loader2, Send, Sparkles, Users } from "lucide-react";
+import { CheckCircle2, Handshake, Loader2, Send, Users } from "lucide-react";
 import { toast } from "sonner";
 import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";

@@ -51,7 +51,7 @@ export function Placeholder({ label, className = "", tall = false }: { label?: s
 }
 
 /** Small mono pill tag, e.g. B01 / STAGE: PROTOTYPE. */
-export function MonoTag({ children, tone = "default" }: { children: string; tone?: "default" | "mint" | "indigo" }) {
+export function MonoTag({ children, tone = "default" }: { children: React.ReactNode; tone?: "default" | "mint" | "indigo" }) {
   const tones = {
     default: "border-border bg-secondary/60 text-muted-foreground",
     mint: "border-mint/30 bg-mint/10 text-mint-600 dark:text-mint",

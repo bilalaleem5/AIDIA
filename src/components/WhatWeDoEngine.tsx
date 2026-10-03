@@ -306,7 +306,6 @@ export default function WhatWeDoEngine() {
   }, [isPaused]);
 
   const active = CAPABILITIES[activeIdx];
-  const Icon = active.icon;
 
   const nextStep = () => {
     setActiveIdx((prev) => (prev + 1) % CAPABILITIES.length);
@@ -433,7 +432,7 @@ export default function WhatWeDoEngine() {
                   {rtl ? "مخرجات وركائز التنفيذ" : "EXECUTION CAPABILITIES & SCOPE"}
                 </p>
                 <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
-                  {(rtl ? active.tagsAr : active.tags).map((tag, tIdx) => (
+                  {(rtl ? active.tagsAr : active.tags).map((tag: string, tIdx: number) => (
                     <motion.div
                       key={tag}
                       initial={{ opacity: 0, x: -8 }}

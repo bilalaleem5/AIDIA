@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 import { motion, useReducedMotion } from "framer-motion";
 import {
-  ArrowRight, ChevronRight,
+  ChevronRight,
   FlaskConical, Handshake,
   Sparkles, TrendingUp,
 } from "lucide-react";

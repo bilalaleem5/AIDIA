@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { Menu, Moon, Search, Sun, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { NAV_ITEMS } from "@/lib/data";
 import { setLanguage } from "@/i18n";
@@ -88,6 +88,15 @@ export default function Navbar({ onOpenSearch }: { onOpenSearch?: () => void } =
 
           {/* Right cluster */}
           <div className="flex items-center gap-1.5">
+            {onOpenSearch && (
+              <button
+                onClick={onOpenSearch}
+                className="hidden h-9 w-9 place-items-center rounded-full text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground sm:grid"
+                aria-label={t("nav.search") || "Search"}
+              >
+                <Search className="h-4 w-4" />
+              </button>
+            )}
             <button
               onClick={toggleTheme}
               className="hidden h-9 w-9 place-items-center rounded-full text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground sm:grid"

@@ -3,8 +3,8 @@ import { Link, useParams } from "react-router";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import {
-  ArrowRight, Compass, Eye, Network, Target, Users,
-  Sparkles, ExternalLink, ShieldCheck, Zap, Dna, FlaskConical, Award,
+  ArrowRight, CheckCircle2, Compass, Eye, Network, Target, Users,
+  Sparkles, ExternalLink,
   Copy, Check, Mail
 } from "lucide-react";
 import { toast } from "sonner";
@@ -139,7 +139,7 @@ export function About() {
                 <div className="h-full rounded-2xl border border-border bg-card p-7 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
                   <div className="flex items-center justify-between">
                     <c.icon className="h-6 w-6 text-indigo" />
-                    <MonoTag tone="indigo">Pillar 0{i + 1}</MonoTag>
+                    <MonoTag tone="indigo">{`Pillar 0${i + 1}`}</MonoTag>
                   </div>
                   <p className="mt-4 text-xl font-bold">{t(`about.${c.k}.t`)}</p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t(`about.${c.k}.d`)}</p>

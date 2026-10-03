@@ -34,7 +34,7 @@ function WhatsAppIcon({ className = "h-5 w-5" }: { className?: string }) {
 }
 
 export default function Contact() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const isAr = i18n.language === "ar";
   const [copiedPhone, setCopiedPhone] = useState(false);
   const [copiedEmail, setCopiedEmail] = useState<string | null>(null);

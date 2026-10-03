@@ -3,7 +3,7 @@ import { Command } from "cmdk";
 import { useNavigate } from "react-router";
 import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
-import { Building2, CalendarDays, FlaskConical, Layers, Search } from "lucide-react";
+import { Building2, FlaskConical, Layers, Search } from "lucide-react";
 import { CATEGORY_KEYS, PROGRAM_KEYS } from "@/lib/data";
 
 export default function SearchPalette({ open, onClose }: { open: boolean; onClose: () => void }) {
