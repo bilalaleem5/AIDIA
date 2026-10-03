@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
-import { Linkedin, Twitter, Youtube } from "lucide-react";
 import { LEGAL_PAGES } from "@/lib/data";
 
 export default function Footer() {
@@ -66,19 +65,6 @@ export default function Footer() {
             <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.16em] text-muted-foreground/70 dark:text-white/40">
               {t("brand.location")}
             </p>
-
-            <div className="mt-6 flex gap-2">
-              {[Twitter, Linkedin, Youtube].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  aria-label="Social link"
-                  className="grid h-9 w-9 place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:border-indigo hover:text-indigo dark:border-white/15 dark:text-white/60 dark:hover:border-indigo-300 dark:hover:text-white shadow-soft"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Link columns */}
